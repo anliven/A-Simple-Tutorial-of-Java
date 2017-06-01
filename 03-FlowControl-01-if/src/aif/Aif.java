@@ -1,6 +1,6 @@
-package getif;
+package aif;
 
-public class Getif {
+public class Aif {
 	public static void main(String args[]) { // 主方法
 		int x = 45; // 声明int型变量x，并赋给初值
 		int y = 12; // 声明int型变量y，并赋给初值

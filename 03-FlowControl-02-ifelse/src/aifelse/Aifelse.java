@@ -1,6 +1,6 @@
-package getifelse;
+package aifelse;
 
-public class Getifelse {
+public class Aifelse {
 	public static void main(String args[]) { // 主方法
 		int math = 100; // 声明int型局部变量，并赋给初值95
 		int english = 100; // 声明int型局部变量，并赋给初值56
