@@ -3,7 +3,7 @@ package e02;
 public class E02 {
 
 	public static void main(String args[]) {
-		int lineCount = 17;// 输出的菱形有多少行，请赋值成奇数
+		int lineCount = 9;// 输出的菱形有多少行，请赋值成奇数
 
 		int maxLineNum = (lineCount + 1) / 2;// 菱形最多一行
 		for (int i = 1; i <= maxLineNum; i++) {// 循环菱形数量越来越多的几行
@@ -29,4 +29,8 @@ public class E02 {
 	}
 	
 }
+
+/* 
+使用for循环打印菱形 
+*/
 	
