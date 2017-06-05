@@ -1,6 +1,6 @@
-package ajoin;
+package ajoin02;
 
-public class Ajoin {
+public class Ajoin02 {
 
 	public static void main(String args[]) {
 		//连接其他数据类型

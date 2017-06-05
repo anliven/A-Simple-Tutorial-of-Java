@@ -1,6 +1,6 @@
-package ajoin;
+package ajoin01;
 
-public class Ajoin {
+public class Ajoin01 {
 
 	public static void main(String args[]) {
 		//字符串连接
