@@ -10,7 +10,8 @@ public class Asingle {
 		}
 		
         String str[] = {"a","b","c","d"}; //初始化一维String数组
-		for(int i = 0; i <= 3; i++){
+        //String str[] = new String[]{"a","b","c","d"}; //初始化一维String数组
+		for(int i = 0; i < str.length; i++){
 			System.out.println("字符：" + str[i]);
 		}
 	}
