@@ -3,16 +3,20 @@ package aBubbleSort;
 public class ABubbleSort {
 
 	public static void main(String[] args) {
-		//冒泡排序
 		int[] array = {8,63,4,24,1,3,15};
 		ABubbleSort sorter = new ABubbleSort();
-		sorter.sort(array);
-
+		
+        System.out.println("原数组内容：");  
+        sorter.showArray(array);
+		sorter.sort(array);  //调用排序方法将数组排序
+        System.out.println("冒泡排序后的数组内容：");  
+        sorter.showArray(array);  
 	}
 	
 	public void sort(int[] array){
-		for(int i = 1; i < array.length;i++){
-			for(int j=0;j<array.length - i; j++){
+		//冒泡排序
+		for(int i=1;i<array.length;i++){
+			for(int j=0;j<array.length-i;j++){
 				if(array[j] > array[j+1]){
 					int temp = array[j];
 					array[j] = array[j+1];
@@ -20,12 +24,12 @@ public class ABubbleSort {
 				}
 			}
 		}
-		showArray(array);
 	}
 	
 	public void showArray(int[] array){
-		for(int i:array){  //foreach语句遍历数组
-			System.out.println(">" + i);
+		//显示数组所有元素
+		for(int i:array){  //for-each语句遍历数组
+			System.out.print(" ->" + i);
 		}
 		System.out.println();
 	}
