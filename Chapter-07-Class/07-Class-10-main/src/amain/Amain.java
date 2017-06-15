@@ -2,12 +2,16 @@ package amain;
 
 public class Amain {
 
-	public static void main(String[] args) {  //主方法
+	public static void main(String[] args) {  //定义主方法
 
 		System.out.println("参数的个数："+args.length);
 		
 		for(String x:args){
 			System.out.println("分别为："+x);
+		}
+		
+		for(int i=0;i<args.length;i++){
+			System.out.println("分别为："+args[i]);
 		}
 
 	}

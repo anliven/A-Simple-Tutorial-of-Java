@@ -1,9 +1,9 @@
 package aclass;
 
-public class Aclass {
+public class Aclass {  //使用class关键字定义类
 	String name;  //定义成员变量
 	
-	public void getName(){  //定义成员方法
+	public void getName(){  //定义无返回值的public成员方法
 		int id=0;  //定义局部变量，必须赋值或初始化
 		System.out.println("ID："+id+" 名称："+name);
 	}

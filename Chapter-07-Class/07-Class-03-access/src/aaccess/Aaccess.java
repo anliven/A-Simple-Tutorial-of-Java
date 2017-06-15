@@ -28,7 +28,9 @@ public class Aaccess {
 ### 权限修饰符
 使用private、protected和public关键字限定对类、类的成员变量、成员方法的访问。
 - private ： 本类
-- protected ：本类、同包其他类或子类
-- public ：本类、同包其他类或子类、其他包的类或子类
+- protected ：本类、同包其他类或子类。
+- public ：本类、同包其他类或子类、其他包的类或子类。
+
+如果声明类时没有设置类的权限，那么默认的访问权限为protected。
 
 */

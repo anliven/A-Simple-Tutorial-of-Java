@@ -18,7 +18,7 @@ public class Astatic {
 	static int x;  //同一个类的不同实例对象，共用同一静态变量，如果一个对象将其更改，另一个对象的静态变量也会更改。
 	int y;
 	public void others(int x, int y){
-		this.x = x;
+		Astatic.x = x;  //使用“类名.静态成员”的方式调用静态成员
 		this.y = y;
 	}
 
@@ -33,9 +33,9 @@ public class Astatic {
 		Astatic b = new Astatic();
 		a.others(1, 2);
 		b.others(100, 200);
-		System.out.println("a.x的值："+a.x);
+		System.out.println("a.x的值："+Astatic.x);
 		System.out.println("a.y的值："+a.y);
-		System.out.println("b.x的值："+b.x);
+		System.out.println("b.x的值："+Astatic.x);
 		System.out.println("b.y的值："+b.y);
 	}
 
