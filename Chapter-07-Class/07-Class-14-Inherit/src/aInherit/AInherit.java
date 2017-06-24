@@ -22,7 +22,7 @@ public class AInherit extends Object{ // 可以省略extends Object关键字
 		test2.say();
 		test2.run();
 		test2.eat();
-		System.out.println(test2.getClass().getName());  // 获得对象所属的类名称
+		System.out.println("所属类的名称：" + test2.getClass().getName());  // 获得对象所属类的名称
 	}
 
 }
@@ -31,7 +31,6 @@ public class AInherit extends Object{ // 可以省略extends Object关键字
 /*
 
 ### 继承
-
 - 单继承：一个子类只继承一个父类；使用extends关键字 
 - 多重继承：例如A类继承B类，B类继承C类；使用 implements关键字
 

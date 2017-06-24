@@ -15,6 +15,14 @@ public class Penguin extends Animal { // extends关键字，子类继承父类
 		Penguin test1 = new Penguin("企鹅", 2); // 实例化子类对象
 		test1.swim();
 		test1.eat();
+		System.out.println("所属类的名称：" + test1.getClass().getName());  // 获得对象所属类的名称
 	}
 
 }
+
+/*
+
+### super关键字
+- 实现对父类成员的访问
+
+*/
