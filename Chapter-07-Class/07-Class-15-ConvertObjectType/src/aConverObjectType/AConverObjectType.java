@@ -2,20 +2,18 @@ package aConverObjectType;
 
 class Animal { // 父类
 	private String name;
-	private int age;
-	public Animal(String myName, int myAge) { // 父类Animal的构造方法
+	public Animal(String myName) { // 父类Animal的构造方法
 		name = myName;
-		age = myAge;
 	}
 	public void say() { // 父类成员方法
-		System.out.println("我是" + age + "岁大的" + name);
+		System.out.println("我是" + name);
 	}
 }
 
 
 class Tiger extends Animal { // extends关键字，子类继承父类
-	public Tiger(String myName, int myAge) { // 子类构造方法
-		super(myName, myAge); // super关键字，调用父类构造方法
+	public Tiger(String myName) { // 子类构造方法
+		super(myName); // super关键字，调用父类构造方法
 	}
 	public void run() { // 新增方法
 		System.out.println("喜欢奔跑");
@@ -27,7 +25,7 @@ public class AConverObjectType {
 	public static void main(String[] args) {
 		
 		//向上转型
-		Animal test = new Tiger("老虎", 1); // 实例化对象，并将子类对象看作是父类对象  --- 向上转型
+		Animal test = new Tiger("老虎"); // 实例化对象，并将子类对象看作是父类对象  --- 向上转型
 		test.say();
 		//test.run();  // 向上转型后，此时被看作父类对象，无法调用子类的方法
 		System.out.println(test.getClass().getName());  // 获得对象所属的类名称
