@@ -14,6 +14,9 @@ public class T01Exception {
 /*
  * 
  * ### 异常
+ * 异常在Java语言中是作为类的实例出现的。
+ * 当某一方法中发生错误时，这个方法会创建一个对象并且传递给正在运行的系统，这个对象就是异常对象。
+ * 
  * java.lang.Throwable类是所有错误或异常的超类，有两个子类：java.lang.Error类和java.lang.Exception类。
  * 
  * java.lang.Error类用于指示合理的应用程序不应该试图捕获的严重问题。
