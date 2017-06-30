@@ -8,13 +8,13 @@ final class FinalClass { // final类
 	int number = 99;
 }
 
-public class T12FinalData {
+public class T12Final {
 
 	final int VALUE_1 = 10; // final成员变量不可更改
 	static final int VALUE_2 = 20; // 全局变量
 	final int BLANK_VALUE; // 空白final变量
 
-	public T12FinalData() { // 在构造方法中为空白final赋值
+	public T12Final() { // 在构造方法中为空白final赋值
 		BLANK_VALUE = 10000;
 
 	}
@@ -36,18 +36,18 @@ public class T12FinalData {
 
 	public static void main(String[] args) {
 
-		T12FinalData data = new T12FinalData();
+		T12Final data = new T12Final();
 
 		// data.VALUE_1 = 30; // 将会提示报错
 		// T12FinalData.VALUE_2 = 40; // 将会提示报错
 		System.out.println(data.test1(200));
 		data.test2();
 
-		T12FinalData data1 = new T12FinalData(); // 实例化一个对象
+		T12Final data1 = new T12Final(); // 实例化一个对象
 		out.println("实例化对象调用n1的值：" + data1.n1); // 调用定义为final的n1
 		out.println("实例化对象调用n2的值：" + data1.n2); // 调用定义为static final的n2
 
-		T12FinalData data2 = new T12FinalData();
+		T12Final data2 = new T12Final();
 		out.println("重新实例化对象调用n1的值：" + data2.n1);
 		out.println("重新实例化对象调用n2的值：" + data2.n2);
 		
@@ -61,7 +61,7 @@ public class T12FinalData {
 
 /*
  * 
- * ### final变量
+ * ### final
  * 使用final关键字定义的数据（常量、对象引用、数组等），都被可以被改变。
  * final关键字定义的变量必须在声明的同时进行赋值操作。
  * 
@@ -69,6 +69,7 @@ public class T12FinalData {
  * 如果要做到真正不可更改，可以声明为static final类型。
  * 
  * Java中全局常量，通常使用public static final修饰，在定义时必须同时赋值。
+ * 按照Java代码惯例，final变量就是常量，而且通常常量名要大写。
  * 
  * 
  * ### final方法
