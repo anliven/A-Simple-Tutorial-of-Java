@@ -8,6 +8,12 @@ interface BBB { // 接口
 	public void eat();
 }
 
+class CCC {
+	protected void test() { // 这里test定义为protected方法
+		System.out.println("调用CCC类的test方法");
+	}
+}
+
 public class T10InnerClass {
 
 	public static void main(String[] args) {
@@ -17,7 +23,7 @@ public class T10InnerClass {
 			public void eat() {
 				System.out.println("抽象类实现匿名内部类: 继承一个抽象类并且重写其方法");
 			}
-		};
+		}; // 注意这里有;字符
 		aaa.eat();
 
 		// 接口实现匿名内部类
@@ -28,6 +34,13 @@ public class T10InnerClass {
 		};
 		bbb.eat();
 
+		// 其他用法
+		new CCC() { // 使用匿名类继承CCC类
+			void callParentTest() { // 在匿名类中定义方法callParentTest()
+				super.test(); // 在这个callParentTest()方法内使用super调用父类的方法
+			}
+		}.callParentTest(); // 调用这个callParentTest()方法
+		
 	}
 
 }
@@ -40,8 +53,8 @@ public class T10InnerClass {
 
 ### 匿名内部类的实现方式
 继承一个抽象类并且重写其方法，或者，实现一个或多个接口并且实现其方法。
-只能创建匿名内部类的一个实例。
-实现形式为“new <抽象类名或接口名>{<匿名类的实现代码>}”，创建一个匿名内部类的对象。
+只能创建匿名内部类的一个实例， 也就是说使用一次。
+实现形式为“new <抽象类名或接口名>{<匿名类的实现代码>};”，创建一个匿名内部类的对象。
 
 - 没有构造方法。
 - 没有访问修饰符和static修饰符。
