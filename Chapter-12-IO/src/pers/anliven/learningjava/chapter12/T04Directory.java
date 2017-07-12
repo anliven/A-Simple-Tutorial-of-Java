@@ -7,19 +7,19 @@ public class T04Directory {
 	public static void main(String[] args) {
 
 		// 创建目录
-		String dirname = "D:/Anliven/Anliven-Code/EclipseProjects/Chapter-12-IO/TestDir";
-		File dir = new File(dirname); // File()方法创建一个文件对象
+		String dirName = "D:/Anliven/Anliven-Code/EclipseProjects/Chapter-12-IO/TestDir";
+		File dir = new File(dirName); // File()方法创建一个文件对象
 		dir.mkdirs();
 		System.out.println("创建TestDir目录 完成");
 
 		// 读取目录
-		String dirname2 = "D:/Anliven/Anliven-Code/EclipseProjects/Chapter-12-IO";
-		File TestFolder = new File(dirname2); // File()方法创建一个文件对象
-		if (TestFolder.isDirectory()) {
-			System.out.println("目录：" + dirname2);
-			String str[] = TestFolder.list();
+		String dirName2 = "D:/Anliven/Anliven-Code/EclipseProjects/Chapter-12-IO";
+		File testFolder = new File(dirName2); // File()方法创建一个文件对象
+		if (testFolder.isDirectory()) {
+			System.out.println("目录：" + dirName2);
+			String str[] = testFolder.list();
 			for (int i = 0; i < str.length; i++) {
-				File testFolder2 = new File(dirname2 + "/" + str[i]);
+				File testFolder2 = new File(dirName2 + "/" + str[i]);
 				if (testFolder2.isDirectory()) {
 					System.out.println("存在目录：" + str[i]);
 				} else {
@@ -27,16 +27,16 @@ public class T04Directory {
 				}
 			}
 		} else {
-			System.out.println(dirname2 + " 不是一个目录");
+			System.out.println(dirName2 + " 不是一个目录");
 		}
 
 		// 删除目录或文件
-		File DelFolder = new File("D:/Anliven/Anliven-Code/EclipseProjects/Chapter-12-IO/TestDir");
-		if (DelFolder.exists()) { // exists()方法测试文件或目录是否存在
-			deleteFolder(DelFolder); // 调用自定义的删除方法
-			System.out.println("未删除目录或文件：" + DelFolder);
+		File delFolder = new File("D:/Anliven/Anliven-Code/EclipseProjects/Chapter-12-IO/TestDir");
+		if (delFolder.exists()) { // exists()方法测试文件或目录是否存在
+			deleteFolder(delFolder); // 调用自定义的删除方法
+			System.out.println("已删除目录或文件：" + delFolder);
 		} else {
-			System.out.println("目录或文件不存在：" + DelFolder);
+			System.out.println("目录或文件不存在：" + delFolder);
 		}
 
 	}
@@ -67,7 +67,7 @@ mkdir()方法：创建一个文件夹，如果指定的路径已经存在，或�
 
 ### 读取目录
 isDirectory()方法：测试是否是一个目录。
-list() 方法：来提取它包含的文件和文件夹的列表。
+list()方法：来提取它包含的文件和文件夹的列表。
 
 ### 删除目录或文件
 exists()方法：测试文件或目录是否存在。

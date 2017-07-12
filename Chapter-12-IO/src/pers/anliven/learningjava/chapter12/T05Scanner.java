@@ -5,53 +5,56 @@ import java.util.Scanner;
 public class T05Scanner {
 
 	public static void main(String[] args) {
-		
+
 		// 示例：hasNext()和next()
-		Scanner TestScan1 = new Scanner(System.in);
-		System.out.println("next()方法获取输入：");
-		if (TestScan1.hasNext()) { // hasNext()方法判断是否还有输入
-			String str1 = TestScan1.next(); // next()方法获取输入
+		Scanner testScan1 = new Scanner(System.in);
+		System.out.println("next()方法获取输入，按Enter键退出：");
+		if (testScan1.hasNext()) { // hasNext()方法判断是否还有输入
+			String str1 = testScan1.next(); // next()方法获取输入
 			System.out.println("输入的数据为：" + str1);
 		}
 
 		// 示例：hasNextLine()和nextLine()
-		Scanner TestScan2 = new Scanner(System.in);
-		System.out.println("nextline()方法获取输入：");
-		if (TestScan2.hasNextLine()) { // hasNext()方法判断是否还有输入
-			String str2 = TestScan2.nextLine(); // nextLine()方法获取输入
+		Scanner testScan2 = new Scanner(System.in);
+		System.out.println("nextline()方法获取输入，按Enter键退出：");
+		if (testScan2.hasNextLine()) { // hasNext()方法判断是否还有输入
+			String str2 = testScan2.nextLine(); // nextLine()方法获取输入
 			System.out.println("输入的数据为：" + str2);
 		}
-		
+
 		// 示例：hasNextFloat()和nextFloat()
-		Scanner TestScan3 = new Scanner(System.in);
-        float f = 0.0f;   
-        System.out.print("nextFloat()方法获取float型数据输入：");  
-        if(TestScan3.hasNextFloat()){ // hasNextFloat()方法判断是否还有输入                
-            f = TestScan3.nextFloat();  // nextFloat()方法获取输入
-            System.out.println("float型数据：" + f);  
-        }else{                                
-            System.out.println("非float型数据") ;  
-        }
-		
+		Scanner testScan3 = new Scanner(System.in);
+		float f = 0.0f;
+		System.out.print("nextFloat()方法获取float型数据输入，按Enter键退出：：");
+		if (testScan3.hasNextFloat()) { // hasNextFloat()方法判断是否还有输入
+			f = testScan3.nextFloat(); // nextFloat()方法获取输入
+			System.out.println("float型数据：" + f);
+		} else {
+			System.out.println("非float型数据");
+		}
+
 		// 示例：hasNextDouble()和nextDouble()
-        Scanner TestScan4 = new Scanner(System.in);  
-        double sum = 0;  
-        int number = 0;
-        System.out.print("nextDouble()方法获取double型数据输入：");  
-        while(TestScan4.hasNextDouble())  
-        {  
-            double x = TestScan4.nextDouble();  // nextDouble()方法以Enter为结束符
-            number = number + 1;  
-            sum = sum + x;  
-        }  
-        System.out.println(number+"个数的和为"+sum);  
-        System.out.println(number+"个数的平均值是"+(sum/number));  
-        
-		TestScan1.close();
-		TestScan2.close();
-		TestScan3.close();
-		TestScan4.close();
-		
+		Scanner testScan4 = new Scanner(System.in);
+		double sum = 0;
+		int number = 0;
+		System.out.print("nextDouble()方法获取double型数据输入，输入“end”退出：");
+		if (testScan4.hasNextDouble()) { // hasNextDouble()方法判断是否还有输入
+			while(testScan4.hasNextDouble()) { 
+				double x = testScan4.nextDouble(); // nextDouble()方法以Enter(回车键)为结束符
+				number = number + 1;
+				sum = sum + x;
+			}
+			System.out.println(number + "个数的和为" + sum);
+			System.out.println(number + "个数的平均值是" + (sum / number));
+		} else {
+			System.out.println("非double型数据");
+		}
+
+		testScan1.close();
+		testScan2.close();
+		testScan3.close();
+		testScan4.close();
+		System.out.println("已关闭所有输入");
 	}
 }
 

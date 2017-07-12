@@ -7,24 +7,24 @@ public class T01BufferedReader {
 	public static void main(String[] args) throws IOException { // 异常抛出
 
 		// 从控制台读取字符
-		char TestData;
-		BufferedReader Test = new BufferedReader(new InputStreamReader(System.in));
+		char testData;
+		BufferedReader test = new BufferedReader(new InputStreamReader(System.in));
 		// 控制台输入由 System.in完成,这里是将System.in包装在一个BufferedReader对象中来创建一个字符流
 		System.out.println("输入字符, 输入‘q’退出：");
 		do {
-			TestData = (char) Test.read(); // read()方法从控制台读取一个字符
-			System.out.println(TestData);
-		} while (TestData != 'q');
+			testData = (char) test.read(); // read()方法从控制台读取一个字符
+			System.out.println(testData);
+		} while (testData != 'q');
 		System.out.println("已退出");
 
 		// 从控制台读取字符串
-		String TestData2;
-		BufferedReader Test2 = new BufferedReader(new InputStreamReader(System.in));
+		String testData2;
+		BufferedReader test2 = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("输入字符串，输入‘end’退出：");
 		do {
-			TestData2 = Test2.readLine(); // readLine()方法读取一个字符串
-			System.out.println(TestData2);
-		} while (!TestData2.equals("end"));
+			testData2 = test2.readLine(); // readLine()方法读取一个字符串
+			System.out.println(testData2);
+		} while (!testData2.equals("end"));
 		System.out.println("已退出");
 
 	}
