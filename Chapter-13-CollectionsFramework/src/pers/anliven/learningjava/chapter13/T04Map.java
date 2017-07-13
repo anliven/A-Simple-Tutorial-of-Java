@@ -8,7 +8,7 @@ public class T04Map {
 	public static void main(String[] args) {
 
 		// HashMap实现类
-		Map<String, String> testMap = new HashMap<String, String>();
+		Map<String, String> testMap = new HashMap<String, String>(); // 声明为Map类型，并通过HashMap实现类来实例化
 		testMap.put("key1", "$$$"); // 添加键值对
 		testMap.put("key2", "111");
 		testMap.put("key3", "aaa");
@@ -35,6 +35,18 @@ public class T04Map {
 		Iterator<Entry<String, String>> it3 = testMap.entrySet().iterator(); // 先通过entrySet()方法构建所有键值对的Set集合，然后创建迭代器
 		while (it3.hasNext()) {
 			System.out.println(it3.next());
+		}
+
+		// 通过key遍历Map集合
+		Map<String, Integer> testMap2 = new TreeMap<String, Integer>(); // 声明为Map类型，并通过TreeMap实现类来实例化
+		System.out.println("通过key遍历Map集合：");
+		testMap2.put("数字1", 111);
+		testMap2.put("数字2", 222);
+		testMap2.put("数字3", 333);
+		Set<String> keys = testMap2.keySet(); // 通过keySet()方法构建所有key的Set集合
+		for (String key : keys) { // 使用for each语句获取每一个key
+			Integer value = testMap2.get(key); // 使用 get()方法获取value
+			System.out.println(key + "***" + value);
 		}
 
 	}
