@@ -37,10 +37,11 @@ public class T01Collection {
 
 
 ### Java集合框架(Java Collections Framework)
-Java集合框架是表示和操作集合的统一框架，包含接口、实现类以及算法。
+Java集合框架是表示和操作集合的统一框架，包含接口、实现类以及工具类。
 常用的集合有3种：set(集）、list(列表）和map(映射)，都存放于java.util包中。
 Set、List和Map都是接口，有各自的实现类。
 Set与List继承了Collection接口；Map是独立的，和Collection接口没有关系。
+常用工具类有两种，java.util.Arrays和java.util.Collections，包含各种常用操作方法。
 
 
 ### 常用接口简介
