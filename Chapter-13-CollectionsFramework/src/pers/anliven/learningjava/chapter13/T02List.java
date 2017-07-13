@@ -5,18 +5,37 @@ import java.util.*;
 public class T02List {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<>(); // 声明为List类型，然后通过ArrayList实现类来实例化集合
-		list.add("a"); // add()方法，将指定的对象添加到集合
-		list.add("b");
-		list.add("c");
-		list.add("111");
-		System.out.println("获取指定索引位置的元素：" + list.get(2)); // get()方法，获得指定索引位置的元素
-		list.set(3, "d"); // set()方法，将集合中指定索引位置的对象修改为指定的对象
-		list.remove(2); // remove()方法，将指定索引位置的元素从集合中移除
-		System.out.println("集合中的元素分别为：");
-		for (int j = 0; j < list.size(); j++) { // 循环遍历集合
-			System.out.println(list.get(j));
+
+		// ArrayList实现类
+		List<String> testList = new ArrayList<>(); // 声明为List类型，并通过ArrayList实现类来实例化
+		testList.add("a"); // add()方法，将指定的对象添加到集合
+		testList.add("b");
+		testList.add("c");
+		testList.add("111");
+		System.out.println("获取指定索引位置的元素：" + testList.get(2)); // get()方法，获得指定索引位置的元素
+		testList.set(3, "d"); // set()方法，将集合中指定索引位置的对象修改为指定的对象
+		testList.remove(2); // remove()方法，将指定索引位置的元素从集合中移除
+		System.out.println("集合内容为：" + testList);
+		System.out.println("指定元素的索引位置为：" + testList.indexOf("d")); // indexOf()方法，返回首次出现指定元素的索引
+		System.out.println("遍历集合：");
+		for (int j = 0; j < testList.size(); j++) { // for循环遍历集合
+			System.out.println(testList.get(j));
 		}
+
+		// LinkedList实现类
+		List<String> testList2 = new LinkedList<>(); // 声明为List类型，并通过LinkedList实现类来实例化集合
+		for (int i = 0; i <= 5; i++) {
+			testList2.add("test" + i);
+		}
+		System.out.println("集合的元素分别为：" + testList2);
+		Collections.reverse(testList2); // 逆序排列
+		System.out.println("逆序排列集合元素：" + testList2);
+		Collections.shuffle(testList2); // 随机排列
+		System.out.println("随机排列集合元素：" + testList2);
+		Collections.sort(testList2); // 顺序排列
+		System.out.println("顺序排列集合元素：" + testList2);
+		System.out.println("获取指定元素的索引位置：" + Collections.binarySearch(testList2, "test2")); // 二分法查找
+
 	}
 
 }
@@ -33,5 +52,5 @@ public class T02List {
 - set()方法，将集合中指定索引位置的对象修改为指定的对象
 
 ### 常用实现类ArrayList和LinkedList的区别
-- ArrayList类，实现了可变的数组，可以保存所有元素（包括null），随机访问速度快，增删操作效率低
-- LinkedList类，采用链表结构保存对象，随机访问速度慢，增删操作效率高*/
+- ArrayList类，基于动态数组的数据结构，可以保存所有元素（包括null），随机访问速度快，增删操作效率低
+- LinkedList类，基于链表结构的数据结构，随机访问速度慢，增删操作效率高*/
