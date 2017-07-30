@@ -4,12 +4,12 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class T01AnnotationExample {
+public class T03AnnotationExample {
 
 
 	public static void main(String[] args) {
 
-		T01AnnotationExample test = new T01AnnotationExample();
+		T03AnnotationExample test = new T03AnnotationExample();
 
 		System.out.println(test.toString());
 
@@ -24,19 +24,19 @@ public class T01AnnotationExample {
 	}
 
 	@Override
-	@T01MethodInfo(author = "Anliven", comments = "Main method", date = "2016", revision = 1)
+	@T03MethodInfo(author = "Anliven", comments = "Main method", date = "2016", revision = 1)
 	public String toString() {
 		return "Overriden toString method";
 	}
 
 	@Deprecated
-	@T01MethodInfo(comments = "deprecated method", date = "2016")
+	@T03MethodInfo(comments = "deprecated method", date = "2016")
 	public static void oldMethod() {
 		System.out.println("old method, don't use it.");
 	}
 
 	@SuppressWarnings({ "unchecked", "deprecation" })
-	@T01MethodInfo(author = "Anliven", comments = "Main method", date = "2016", revision = 10)
+	@T03MethodInfo(author = "Anliven", comments = "Main method", date = "2016", revision = 10)
 	public static void genericsTest() throws FileNotFoundException {
 		List testList = new ArrayList();
 		testList.add("test");
@@ -74,7 +74,7 @@ java.lang.annotation包为注解提供支持。
 - ElementType.LOCAL_VARIABLE：可用来注解局部变量
 
 
-### 内建注解
+### 内建注解（JDK注解）
 @Override -- 告知编译器将要复写父类中的方法,当父类中的方法移除或者发生更改时编译器将提示错误信息。
 
 @Deprecated -- 告知编译器被修饰的程序元素已被“废弃”,不建议使用。建议注明不推荐使用的原因以及替代的方法。

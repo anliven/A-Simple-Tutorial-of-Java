@@ -12,7 +12,7 @@ import java.lang.annotation.RetentionPolicy;
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
 
-public @interface T01MethodInfo {
+public @interface T03MethodInfo {
 	String author() default "Anliven";
 
 	String date();
