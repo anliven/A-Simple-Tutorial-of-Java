@@ -1,6 +1,6 @@
 package pers.anliven.learningjava.practices03;
 
-public class Practices0302 {
+public class P0302 {
 
 	static int age = 29;
 

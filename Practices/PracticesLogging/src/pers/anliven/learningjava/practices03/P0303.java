@@ -1,6 +1,6 @@
 package pers.anliven.learningjava.practices03;
 
-public class Practices0303 {
+public class P0303 {
 
 	public static void main(String[] args) {
 		long testLong = 987654321;
