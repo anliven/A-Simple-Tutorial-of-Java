@@ -64,6 +64,9 @@
 4. 在方法中编写一个匿名内部类。
 5. 将主方法写到静态内部类中，然后在命令行界面编译执行，注意编译后出现的.class文件。
 6. 编写一个静态内部类，在主方法中创建内部类的实例。
+7. 定义一个枚举类型，使用switch语句获取枚举类型的值。
+8. 定义一个泛型类，使用extends关键字限制该泛型类的类型为List接口，并分别创建两个泛型对象。
+9. 定义一个泛型类，并使用通配符。
 
 
 ## Chapter-11-Exception
@@ -80,3 +83,23 @@
 ## Chapter-13-CollectionsFramework
 1. 将1~100之间的所有正整数存放在一个List集合中，并将集合中索引位置是10的对象从集合中移除。
 2. 分别向Set集合和List集合中添加"A,a,c,C,a"5个元素，观察重复值“a”能否重复在List集合和Set集合中添加。
+
+
+## Chapter-14-Reflection
+1. 利用反射实现通用扩展数组长度的方法。
+
+
+## Chapter-15-Annotation
+
+
+## Chapter-16-Multithreading
+
+
+## Chapter-17-JDBC
+
+
+## Chapter-18-Network
+
+
+## Chapter-19-GUI
+
