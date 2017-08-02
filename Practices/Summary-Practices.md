@@ -67,36 +67,29 @@
 
 
 ## Chapter-11-Exception
-1. 编写Computer类，该类中包含一个计算两个数的最大公约数的方法，如果向该方法传递负数，该方法就会抛出自定义异常。
-2. 编写Number类，该类中包含一个计算任意两个数相乘的方法；编写主类，在主方法中使用try-catch语句捕获可能发生的异常。
-3. 编写自定义异常类MyException；编写Student类，该类的speak(int m)方法在参数m大于1000时会抛出MyException对象；编写主类，在主方法中创建Student对象并调用speak()方法。
+1. 编写计算任意两个数相乘的方法,在主方法中使用try-catch语句捕获可能发生的异常。
+2. 编写自定义异常类MyException；编写Student类，该类的speak(int m)方法在参数m大于1000时会抛出MyException对象；编写主类，在主方法中创建Student对象并调用speak()方法。
 
 
 ## Chapter-12-IO
 1. 创建文件，使用字符输入输出流将一段文字加密后存入文件并读取，然后输出加密后的文件。
-2. 将用户输入的每一个用户名和密码记录到文件中，如果用户输入done，就结束输入。
 
 
 ## Chapter-13-CollectionsFramework
 1. 将1~100之间的所有正整数存放在一个List集合中，并将集合中索引位置是10的对象从集合中移除。
 2. 分别向Set集合和List集合中添加"A,a,c,C,a"5个元素，观察重复值“a”能否重复在List集合和Set集合中添加。
+3. 创建Map集合，创建Emp对象并添加到集合，Emp对象的ID作为Map集合的键，将ID为“015”的对象从集合中移除。
 
 
 ## Chapter-14-Reflection
-1. 利用反射实现通用扩展数组长度的方法。
-
 
 ## Chapter-15-Annotation
 
-
 ## Chapter-16-Multithreading
-
 
 ## Chapter-17-JDBC
 
-
 ## Chapter-18-Network
-
 
 ## Chapter-19-GUI
 
