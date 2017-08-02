@@ -20,10 +20,12 @@ public class P1302 {
 		list.add("A");
 		list.add("a");
 		list.add("C");
-		System.out.println(set);
-		System.out.println(list);
+		System.out.println("Set集合： " + set);
+		System.out.println("List集合： " + list);
 	}
 
 }
 
-// 分别向Set集合和List集合中添加"A,a,c,C,a"5个元素，观察重复值“a”能否重复在List集合和Set集合中添加。
+// 分别向Set集合和List集合中添加"a,c,A,a,C"5个元素;
+// 观察重复值“a”能否重复在List集合和Set集合中添加;
+// 观察List集合和Set集合中元素的顺序。
