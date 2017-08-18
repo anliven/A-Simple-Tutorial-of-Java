@@ -31,6 +31,9 @@ public class T04DataTypeConversion {
  * 
  * 隐式类型转换：低级类型向高级类型转换，系统自动运行
  * byte《short《int《long《float《double
+ * 隐式（自动）类型转换的条件：
+ * -目标类型能与源类型兼容，如double型兼容int型，但是char型不能兼容int型
+ * -目标类型长度大于源类型，如double类型长度为8字节，int类型为4字节，因此double类型变量可以直接存放int类型的数据
  * 
  * 显式类型转换（强制类型转换）：高精度变量的值赋值给低精度的变量
  * 语法：(类型名)待转换的值 
