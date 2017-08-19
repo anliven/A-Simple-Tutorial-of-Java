@@ -3,7 +3,7 @@ package pers.anliven.learningjava.chapter04;
 public class T04Switch {
 
 	public static void main(String args[]) {
-		int week = 3;
+		int week = 4;
 		switch (week) { // switch多分支语句，实现“多选一”的选择场景
 		case 1:
 			System.out.println("Monday");
