@@ -3,7 +3,7 @@ package pers.anliven.learningjava.chapter07;
 public class T10CompareObject {
 
 	public static void main(String[] args) {
-		String str1 = new String("abc"); // new关键字调用构造方法创建String型对象str1，分配内存地址
+		String str1 = new String("abc"); // new关键字调用构造方法创建String型对象str1并分配内存地址
 		String str2 = new String("abc");
 		// str1和str2是不同对象实体的引用，虽然内容相同，但内存地址不同
 		System.out.println("str1==str2的运算结果为：" + (str1 == str2));
