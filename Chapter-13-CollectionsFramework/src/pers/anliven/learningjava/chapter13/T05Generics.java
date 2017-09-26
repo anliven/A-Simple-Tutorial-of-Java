@@ -1,6 +1,6 @@
-package pers.anliven.learningjava.chapter10;
+package pers.anliven.learningjava.chapter13;
 
-public class T14Generics {
+public class T05Generics {
 
 	public static void main(String[] args) {
 

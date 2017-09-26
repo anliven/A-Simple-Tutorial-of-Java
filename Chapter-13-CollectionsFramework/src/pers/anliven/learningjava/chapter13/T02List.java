@@ -9,12 +9,14 @@ public class T02List {
 		// ArrayList实现类
 		List<String> testList = new ArrayList<>(); // 声明为List类型，并通过ArrayList实现类来实例化
 		testList.add("a"); // add()方法，将指定的对象添加到集合
+		testList.add("a"); // 添加重复对象	
 		testList.add("b");
 		testList.add("c");
-		testList.add("111");
+		testList.add("111");		
 		System.out.println("获取指定索引位置的元素：" + testList.get(2)); // get()方法，获得指定索引位置的元素
 		testList.set(3, "d"); // set()方法，将集合中指定索引位置的对象修改为指定的对象
 		testList.remove(2); // remove()方法，将指定索引位置的元素从集合中移除
+		System.out.println("是否包含指定元素：" + testList.contains("b")); // contains()方法，如果列表包含指定的元素则返回 true
 		System.out.println("集合内容为：" + testList);
 		System.out.println("指定元素的索引位置为：" + testList.indexOf("d")); // indexOf()方法，返回首次出现指定元素的索引
 		System.out.println("遍历集合：");

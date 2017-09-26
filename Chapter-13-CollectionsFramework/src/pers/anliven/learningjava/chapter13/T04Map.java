@@ -54,16 +54,14 @@ public class T04Map {
 }
 
 /*### 映射（Map）
-- Map是独立的，和Collection接口没有关系
-- 集合中存放是键值对（key-value）元素，每个key只能对应一个value
-- key不能重复，value可以重复
+- 元素是以键值对（key-value）的形式存储，可以根据key快速查找value
+- key和value可以是任意类型的对象，每个key只能对应一个value，key不能重复，value可以重复
 - 常用实现类有HashMap和TreeMap
-- 实现类TreeMap可以根据键值进行排序
-
+- Map支持泛型，形式如：Map<K,V>
 
 ### 常用实现类HashMap
-- 底层数据结构是哈希表，根据键的HashCode值存储数据
-- HashMap中元素的排列顺序是不固定的
+- 基于哈希表实现：底层数据结构是哈希表，根据键的HashCode值存储数据
+- HashMap中的Entry（键值对）对象是无序排列的
 - HashMap最多只允许一条记录的键为Null，允许多条记录的值为Null
 - 由HashMap实现的Map集合，增删操作效率更高，建议使用
 
