@@ -13,6 +13,7 @@ public class T03Set {
 		testSet.add("kkk");
 		testSet.add("111");
 		testSet.add("333");
+		System.out.println("是否包含指定元素：" + testSet.contains("kkk")); // contains()方法，如果列表包含指定的元素则返回 true
 		System.out.println("未排序: " + testSet);
 		System.out.println("遍历集合：");
 		Iterator<String> it = testSet.iterator(); // 创建迭代器
