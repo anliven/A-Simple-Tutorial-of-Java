@@ -26,18 +26,4 @@
 
 - Chapter-13-CollectionsFramework
 
-- Chapter-14-Reflection
-
-- Chapter-15-Annotation
-
-- Chapter-16-Multithreading
-
-- Chapter-17-JDBC
-
-- Chapter-18-Network
-
-- Chapter-19-GUI
-
-- Chapter-20-Docs
-
 - Practices
